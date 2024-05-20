@@ -1,5 +1,7 @@
 # Neptune - Dynamic Code Execution Server
 
+Neptune is like jupyter notebook inside your terminal.
+
 ## Overview
 
 Neptune is a dynamic code execution server that allows you to execute Python code snippets remotely. It uses a Unix socket for communication between the server and the client, enabling you to send code snippets to be executed within a persistent global context. This setup can be useful for various applications, such as rapid prototyping, debugging, or running code in a controlled environment.
@@ -15,7 +17,7 @@ Neptune is a dynamic code execution server that allows you to execute Python cod
 To use Neptune, you need:
 
 - Python 3.x installed on your system.
-- Basic knowledge of Unix sockets and Python programming.
+- Basic knowledge of python programming.
 
 ## Installation
 
@@ -39,6 +41,7 @@ To use Neptune, you need:
 
 ## Usage
 
+
 ### Sending Code Snippets
 
 You can send code snippets to the Neptune server using the provided client script or any other method that can communicate via Unix sockets.
@@ -56,3 +59,18 @@ You can send code snippets to the Neptune server using the provided client scrip
 ### Syntax for Code Snippets
 
 - You can define variables, functions, and execute any valid Python code within the snippet.
+
+### Helix Editor Integration
+
+This script has been originally made to integrate with helix editor. To configure it, just add this to your config:
+
+```toml
+[keys.normal]
+C-k = ["extend_to_line_bounds", ":pipe-to python /home/path/to/client.py"]
+[keys.select]
+C-k = ["extend_to_line_bounds", ":pipe-to python /home/path/to/client.py"]
+```
+
+Then run `neptune.py` wherever you want, and inside helix, select python code then run it with ctrl+k.
+
+(tip: use _mip_ shortcut to select entire block code between 2 blank lines)
