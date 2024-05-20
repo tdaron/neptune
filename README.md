@@ -4,7 +4,7 @@ Neptune is like jupyter notebook inside your terminal.
 
 ## Preamble
 
-This tool is made to be configured inside some editor to be really powerful. An Helix configuration is given below, but some (neo)vim/emacs configuration should be possible as well. 
+This tool is made to be configured inside an editor to be really powerful. An Helix configuration is given below, but some (neo)vim/emacs configuration should be possible as well. 
 
 ## Overview
 
