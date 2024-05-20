@@ -8,7 +8,7 @@ This tool is made to be configured inside an editor to be really powerful. An He
 
 ## Overview
 
-Neptune is a dynamic code execution server that allows you to execute Python code snippets remotely. It uses a Unix socket for communication between the server and the client, enabling you to send code snippets to be executed within a persistent global context. This setup can be useful for various applications, such as rapid prototyping, debugging, or running code in a controlled environment.
+Neptune is a dynamic code execution server that allows you to execute Python code snippets with shared global context. It uses a Unix socket for communication between the server and the client, enabling you to send code snippets to be executed within a persistent global context. This setup can be useful for various applications, such as rapid prototyping, debugging, or running code in a controlled environment.
 
 ## Features
 
