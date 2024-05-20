@@ -12,7 +12,6 @@ Neptune is a dynamic code execution server that allows you to execute Python cod
 
 ## Features
 
-- **Remote Code Execution**: Neptune allows you to execute Python code snippets remotely by sending them to the server via a Unix socket.
 - **Shared Global Context**: The server maintains a shared global context across multiple code executions, enabling variables and functions defined in previous snippets to be accessed by subsequent ones.
 - **Flexible Usage**: You can use Neptune to run individual code snippets or sequences of code snippets, enabling interactive experimentation and development.
 
